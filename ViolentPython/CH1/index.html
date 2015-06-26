@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+<meta name="robots" content="noindex, nofollow" />
+
+
+  <title>Elsevier &middot; O`Connor: Violent Python &middot; </title>
+
+	
+  <link href="http://booksite.elsevier.com/global_content/terms_policies_Elsevier.css" rel="stylesheet" type="text/css" />
+  <link href="http://booksite.elsevier.com/global_content/store_companion/main.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+// <![CDATA[
+IE = (navigator.appName == "Microsoft Internet Explorer");
+NS = (navigator.appName == "Netscape");
+var agt=navigator.appVersion.toLowerCase();
+ver = parseInt(agt);
+// ]]>
+</script>
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+<script type="text/javascript" src="http://store.elsevier.com/ui/js/rightnow.js"> </script>
+<script type="text/javascript" src="http://booksite.elsevier.com/JS_library/accordion_menu-v1.0/accordion.js"> </script>
+<script type="text/javascript" src="http://booksite.elsevier.com/JS_library/jquery-yoxview/yoxview-init.js"> </script>
+<script type="text/javascript" src="http://www1.us.elsevierhealth.com/generalJS.js"> </script>
+<script type="text/javascript" src="http://booksite.elsevier.com/global_content/store_companion/store_companion.js"> </script>
+
+				<script type="text/javascript">
+			// <![CDATA[
+
+
+			$(document).ready(function(){
+
+				//eventually http://en.wikipedia.org/wiki/Cross-Origin_Resource_Sharing (XDomainRequest in IE8/9) will allow direct XML request
+				//for now, must get JavaScript via PHP from XML
+				//fetch content for terms
+				$.ajax({
+					url: 'http://booksite.elsevier.com/global_content/?content=terms',
+					async: false,
+					dataType: 'script'
+				})
+				.done(function(data) {
+					apply_remotexml('terms_conditions', remotexml, false, 3);
+				})
+				.fail(function(data, textStatus, errorThrown) {
+					alert('Error: Terms and conditions text did not load (' + textStatus + ')');
+				});
+
+				//fetch content for privacy
+				$.ajax({
+					url: 'http://booksite.elsevier.com/global_content/?content=privacy',
+					async: false,
+					dataType: 'script'
+				})
+				.done(function(data) {
+					apply_remotexml('privacy_policy', remotexml, false, 3);
+				})
+				.fail(function(data, textStatus, errorThrown) {
+					alert('Error: Privacy policy text did not load (' + textStatus + ')');
+				});
+
+				//fetch content for cookies
+				$.ajax({
+					url: 'http://booksite.elsevier.com/9781597499576/cookiepolicy.php?qoutput=JSvar',
+					async: false,
+					dataType: 'script'
+				})
+				.done(function(data) {
+					apply_remotexml('cookie_policy', remotexml, false, 3);
+				})
+				.fail(function(data, textStatus, errorThrown) {
+					alert('Error: Cookie policy text did not load (' + textStatus + ')');
+				});
+
+				window.remotexml_count = 0; //number of remotexml that have been applied; on window object to avoid clashes and jQuery resets
+				//writes out content and initializes yoxview when everything is completed
+				function apply_remotexml(ID, content, yoxview_init, remotexml_total) {
+					//may not be set or may be unset by other jQuery
+					if(typeof(window.remotexml_count) === 'undefined') {
+						window.remotexml_count = 0; //number of remotexml that have been applied
+					}
+					window.remotexml_count++;
+					$('#' + ID).append(content);
+					//if true or if all remotexml pieces have been applied, yoxview will be instantiated (empty yoxes will result otherwise)
+					if(yoxview_init === true || window.remotexml_count == remotexml_total) {
+						$("#footer").yoxview({
+								allowInternalLinks: true,
+								renderButtons: false,
+								renderInfo: false,
+								renderMenu: false,
+								textLinksSelector: ".yoxview_legal"
+						});
+						//enables other links on page to open these modals by passing event to the ones in the footer because yoxview will not apply same opener to two elements
+						$(".modal_policies").click(function(event){
+							event.preventDefault();
+							var hash="#" + this.href.split('#')[1];
+							$("#footer .yoxview_legal[href='" + hash + "']").click();
+						});
+					}
+				}
+
+
+			});
+
+
+			// ]]>
+			</script>
+
+
+	
+  </head>
+
+  <body>
+  <div id="wrapper">
+
+<div class="headerWrapper">
+<div id="header">
+	<div id="loginBar">
+		<!-- TC commented out the Companion Site Search link per task12439, Jan2013 -->
+		<span class="login_left"><a href="http://store.elsevier.com/" onclick="popup(this.href,'offsite'); return false;">Elsevier Store</a>&nbsp;<img src="http://booksite.elsevier.com/global_content/store_companion/graphics/topnav_separator.gif" width="1" height="7" alt="topnav_separator" />&nbsp;&nbsp;<a href="http://store.elsevier.com/" onclick="popup(this.href,'offsite'); return false;">Special Offers</a></span><span class="login_right"><!-- <a href="http://booksite.elsevier.com/search.php">Companion Site Search</a>&nbsp;<img src="http://booksite.elsevier.com/global_content/store_companion/graphics/topnav_separator.gif" width="1" height="7" alt="topnav_separator" /> -->&nbsp;&nbsp;
+			<a href="/9781597499576/chapters.php" class="login">Log in</a>&nbsp;<img src="http://booksite.elsevier.com/global_content/store_companion/graphics/topnav_separator.gif" width="1" height="7" alt="topnav_separator" />&nbsp;<a href="/9781597499576/chapters.php">Register</a>
+			
+
+        	<div class="loginForm"><form class="login" name="login" id="loginForm" method="post" action="chapters.php"><div class="PersonForm"><div class="row"><div class="heading">Already registered?<br />
+Log in here:</div></div>
+    		<div class="row username"><label for="loginForm_username" class="label">Username:</label><span class="field"><input type="text" name="username" id="loginForm_username" /></span></div>
+    		<div class="row password"><label for="loginForm_password" class="label">Password:</label><span class="field"><input type="password" name="password" id="loginForm_password" /></span></div>
+    		<div class="row rememberme"><span class="caption"><input type="checkbox" name="rememberme" value="Y" id="loginForm_rememberme" /><label for="loginForm_rememberme">Stay signed in</label></span></div>
+    		<div class="row submit"><span class="label"></span><span class="field"><input type="submit" value="Log in" class="submit" id="loginForm_submit" /></span></div>
+    		<div class="row registerpage"><strong><a href="/9781597499576/chapters.php">Register</a></strong></div>
+    		</div></form></div>
+
+        	
+		</span>
+	</div>
+	<!-- end loginBar -->
+	<div id="top_wrapper">
+		<div id="imprint_logo"><a href="http://elsevier.com" onclick="popup(this.href,'offsite'); return false;"><img src="http://booksite.elsevier.com/global_content/store_companion/graphics/nonsolus110x97.png" class="elsevier" width="97" height="110" alt="imprint logo" /></a></div>
+		<!--end imprint logo-->
+		<div id="companion_head">
+			<h2 class="companion_materials">Companion Materials</h2>
+		</div>
+		<!--end banner-->
+		<div id="author_title">
+			<h1><a href="/9781597499576/">O`Connor: Violent Python</a></h1>
+			<!-- AddThis Button BEGIN -->
+			
+			<div class="addthis_button"><a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4b86c3090c5f65ae"><img width="125" height="16" alt="Bookmark and Share" src="https://s7.addthis.com/static/btn/v2/lg-share-en.gif" /></a></div>
+			<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b86c3090c5f65ae"> </script>
+		
+			<!-- AddThis Button END -->
+		</div>
+		<!--end author_title-->
+	</div>
+	<!--end top_wrapper-->
+</div>
+<!-- end header -->
+</div>
+<!-- end headerWrapper -->
+
+<hr style="display:none" />
+		
+
+<div class="contentWrapper" id="contentWrapper">
+	<div id="navigation" class="navigation">
+	
+
+	  
+
+	 
+	
+	
+
+
+	
+	
+	
+	
+
+
+
+	</div>
+	<!-- end navigation -->
+
+	<div id="content" class="content">
+		<h2 class="pagetitle"></h2>
+		
+		<meta http-equiv="refresh" content="; URL=http://booksite.elsevier.com/9781597499576/" /><p>You have reached an incorrect URL.<br /><a href="http://booksite.elsevier.com/9781597499576/">Click here</a> if your browser does not redirect you after a few moments.</p>
+	</div>
+	<!-- end content -->
+</div>
+<!-- end id=contentWrapper -->
+
+
+
+<hr style="display:none" />
+<div class="footer">
+    <div class="innercontainer">
+        <!--<div class="smallcolumn">&nbsp;</div>-->
+        <div class="onecolumn">
+           <h4>About Elsevier</h4>
+               <dl>
+                    <dd><a href="http://www.elsevier.com/wps/find/intro.cws_home/ataglance" onclick="popup(this.href,'offsite'); return false;">At a Glance</a></dd>
+                    <dd><a href="http://www.elsevier.com/wps/find/newsroom.newsroom/resource" onclick="popup(this.href,'offsite'); return false;">Media</a></dd>
+                    <dd><a href="http://www.elsevier.com/wps/find/authorsview.authors/landing_main" onclick="popup(this.href,'offsite'); return false;">Publishing</a></dd>
+                    <dd><a href="http://www.elsevier.com/wps/find/intro.cws_home/principles" onclick="popup(this.href,'offsite'); return false;">Principles and Policies</a></dd>
+             </dl>
+        </div>
+    <div class="onecolumn">
+          <h4>Support</h4>
+           <dl>
+				<!--<dd><a href="mailto:Technical Support <Technical.Support@elsevier.com>">Help With This Site</a></dd>
+				<dd><a rel="nofollow" href="http://elsevier6.custhelp.com/app/answers/list/p/7617" onclick="helpbox(); return false;">Help</a></dd>-->
+				<dd><a rel="nofollow" href="http://store.elsevier.com/" onclick="popup(this.href,'offsite'); return false;">Elsevier Store</a></dd>
+				<dd><a rel="nofollow" href="#" class="box">Your Purchases &raquo;</a>
+                        <div class="subfooter_box">
+                         <div class="subfooter_top"><!-- --></div>
+                        <!-- START footer subnavigation 1-->
+                            <div class="subfooter_main">
+								<dl>
+									<dd><a href="http://elsevier6.custhelp.com/app/answers/list/p/7617/c/7566" onclick="faqBox(this.href); return false;">Order Status</a></dd>
+									<dd><a href="http://elsevier6.custhelp.com/app/answers/list/p/7617/c/7581" onclick="faqBox(this.href); return false;">Payment Queries</a></dd>
+									<dd><a href="http://elsevier6.custhelp.com/app/answers/list/p/7617/c/7567" onclick="faqBox(this.href); return false;">Help with Online Access</a></dd>
+									<dd><a href="http://elsevier6.custhelp.com/app/answers/list/p/7617/c/7585" onclick="faqBox(this.href); return false;">Returns and Refunds</a></dd>
+									<dd><a href="http://elsevier6.custhelp.com/app/answers/detail/a_id/1556/p/7617/kw/VAT/search/1" onclick="faqBox(this.href); return false;">Vat and Sales Tax Exemptions</a></dd>
+								</dl>
+                            </div>
+				<!-- END footer subnavigation 1-->
+					</div>
+			 	</dd>
+				<dd><a href="http://store.elsevier.com/coArticle.jsp?pageid=4200014" onclick="popup(this.href,'offsite'); return false;">About the Elsevier Store</a></dd>
+                <dd><a href="http://store.elsevier.com/sitemap.jsp" onclick="popup(this.href,'offsite'); return false;">Sitemap</a></dd>
+            </dl>
+    </div>
+    <div class="onecolumn">
+           <h4>Related sites</h4>
+            <dl>
+            <dd class="list1"><a href="#" class="box">Resources for &raquo;</a>
+			<div class="subfooter_box">
+			<div class="subfooter_top"><!-- --></div>
+             <!-- START footer subnavigation 1-->
+                <div class="subfooter_main">
+                    <dl>
+                        <dd><a href="http://www.elsevierdirect.com/authors" onclick="popup(this.href,'offsite'); return false;">Book Authors</a></dd>
+						<dd><a href="http://www.elsevier.com/wps/find/authorsview.authors/landing_main" onclick="popup(this.href,'offsite'); return false;">Journal Authors</a></dd>
+                        <dd><a href="http://store.elsevier.com/coArticle.jsp?pageid=4200004" onclick="popup(this.href,'offsite'); return false;">Instructors</a></dd>
+                        <dd><a href="http://www.elsevier.com/wps/find/librarianshome.librarians" onclick="popup(this.href,'offsite'); return false;">Librarians</a></dd>
+                        <dd><a href="http://store.elsevier.com/coArticle.jsp?pageid=4200006" onclick="popup(this.href,'offsite'); return false;">Science &amp; Technology Books Press Center</a></dd>
+                        <dd><a href="http://store.elsevier.com/coArticle.jsp?pageid=4200022" onclick="popup(this.href,'offsite'); return false;">Resellers</a></dd>
+                        <dd><a href="http://store.elsevier.com/coArticle.jsp?pageid=4200024" onclick="popup(this.href,'offsite'); return false;">Students</a></dd>
+                        <dd><a href="http://trainingdesk.elsevier.com/" onclick="popup(this.href,'offsite'); return false;">Researchers</a></dd>
+                        <dd><a href="http://store.elsevier.com/coArticle.jsp?pageid=4200012" onclick="popup(this.href,'offsite'); return false;">Rights and Translations</a></dd>
+                        <dd><a href="http://www.elsevier.com/wps/find/reviewershome.reviewers" onclick="popup(this.href,'offsite'); return false;">Reviewers</a></dd>
+                    </dl>
+                </div>
+	<!-- END footer subnavigation 1-->
+          </div>
+          </dd>
+		<dd class="list2"><a href="http://www.elsevier.com/wps/find/elsevierwebsites.cws_home/elsevierwebsites" onclick="popup(this.href,'offsite'); return false;">Elsevier Website List</a></dd>
+		<dd><a href="http://www.elsevier.com/wps/find/conferences_overview.cws_home/conferenceslist" onclick="popup(this.href,'offsite'); return false;">Conferences</a> and <a
+href="http://www.elsevier.com/wps/find/exhibitions.cws_home" onclick="popup(this.href,'offsite'); return false;">Exhibitions</a></dd>
+		<dd>&nbsp;</dd>
+		</dl>
+    </div>
+    <div class="onecolumn">
+             <h4>Stay Connected</h4>
+                 <dl>
+                    <dd><a href="http://store.elsevier.com/coArticle.jsp?pageid=4200016" onclick="popup(this.href,'offsite'); return false;">Summary</a></dd>
+                    <dd><a href="http://store.elsevier.com/coArticle.jsp?pageid=4800002" onclick="popup(this.href,'offsite'); return false;">Email Newsletters</a></dd>
+                    <dd><a href="http://store.elsevier.com/coArticle.jsp?pageid=4200018" onclick="popup(this.href,'offsite'); return false;">RSS</a></dd>
+                    <dd><a href="http://store.elsevier.com/coArticle.jsp?pageid=4200020" onclick="popup(this.href,'offsite'); return false;">Social Media</a></dd>
+                </dl>
+    </div>
+	 <div class="clearline"><!-- --></div>
+    </div>
+    <!--end innercontainer-->
+</div>
+<div id="footer">
+<div class="copyright"><p class="copy">Copyright &copy; 2012 by Elsevier&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#privacy_policy" title="http://www.elsevier.com/wps/find/privacypolicy.cws_home/privacypolicy" class="yoxview_legal">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#terms_conditions" title="http://www.elsevier.com/wps/find/termsconditions.cws_home/termsconditions" class="yoxview_legal">Terms and Conditions of Use</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://nl.sitestat.com/elsevier/elsevier-com/s?clickout.footer.reedelsevier&amp;ns_type=clickout">A Reed Elsevier Company</a></p>
+</div><!-- end footer -->
+<div class="my_footer">
+<p class="cookies">Cookies are set by this site. To decline them or learn more, visit our <a href="#cookie_policy" title="http://booksite.elsevier.com/9781597499576/cookiepolicy.php" class="yoxview_legal">Cookie</a> page.</p>
+<img class="footer_logo" width="296" height="30" alt="footer" src="http://booksite.elsevier.com/global_content/store_companion/graphics/vis_logo_elsevier_footer.png"/>
+</div>
+<!-- end my_footer -->
+</div>
+		<div id="terms_conditions" style="display:none;"></div>
+		<div id="privacy_policy" style="display:none;"></div>
+		<div id="cookie_policy" style="display:none;"></div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17075028-5']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+//]]>
+</script>
+
+  </div>
+  <!-- end wrapper -->
+  <!-- created 02.01.12 -->
+  <!-- revised 02.22.12 beta 2 -->
+  <!-- revised 04.12.12 beta 2 -->
+  <!-- revised 06.14.12 after final, approved, etc. -->
+  <!-- final 07.02.12 -->
+
+  </body>
+<!-- created 2012-04-11 -->
+</html>

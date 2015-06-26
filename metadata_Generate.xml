@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- ATLAS file meta-data catalog -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+   <META type="string" name="ecmEnergy" value="8000.0"/>
+   <META type="string" name="GenFiltEff" value="1.000000e+00"/>
+   <META type="string" name="generator" value="Pythia 8.175"/>
+   <META type="string" name="randomSeed" value="1"/>
+   <META type="string" name="physicsComment" value="Z-&gt;ee production with no lepton filter and AU2 CTEQ6L1 tune"/>
+   <META type="string" name="runNumber" value="147816"/>
+   <META type="string" name="fileType" value="evgen"/>
+   <META type="string" name="firstEvent" value="1"/>
+   <META type="string" name="dataset" value=""/>
+   <META type="string" name="maxEvents" value="10000"/>
+   <META type="string" name="contactPhysicist" value="MC group"/>
+   <META type="string" name="jobConfig" value="['./MC12.147816.Pythia8_AU2CTEQ6L1_Zee.py']"/>
+   <META type="string" name="cross-section" value="8.790e-01"/>
+   <META type="string" name="generatorTune" value="AU2 CTEQ6L1"/>
+   <META type="string" name="generatorName" value="Pythia8+Photospp"/>
+   <META type="string" name="keywords" value="z, leptons, electroweak"/>
+   <META type="string" name="PDF" value="CTEQ6L1 - LO with LO alpha_s"/>
+   <META type="string" name="events"/>
+   <META type="string" name="specialConfig" value="NONE"/>
+   <META type="string" name="size" value="318278486"/>
+   <File ID="DECDFA29-BCE7-0A42-B8D2-1B53EFA4DDCB">
+      <logical>
+         <lfn name="EVNT.root"/>
+      </logical>
+      <metadata att_name="physicsComment" att_value="Z-&gt;ee production with no lepton filter and AU2 CTEQ6L1 tune"/>
+      <metadata att_name="events" att_value="10000"/>
+   </File>
+</POOLFILECATALOG>

@@ -1,0 +1,10 @@
+(lp0
+S'apple'
+p1
+aS'cherry'
+p2
+aS'blackberry'
+p3
+aS'apricot'
+p4
+a.
