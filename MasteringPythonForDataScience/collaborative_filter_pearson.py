@@ -112,7 +112,7 @@ if __name__ == "__main__":
         # return correlation coeff and p-value
         # null hypo is that user preferences are different
         corr,p = stats.pearsonr(df_pair[usr[0]],df_pair[usr[1]])
-        if (p<0.05):
+        if (corr>0.6 and p<0.05):
             print usr[0] + ' and ' + usr[1] + ' have similar movie preferences.'
 
         # uncomment for cross-check
