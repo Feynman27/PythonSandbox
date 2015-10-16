@@ -119,6 +119,7 @@ if __name__ == "__main__":
                                 'Kill the Messenger': 6.5,
                                 'Zoolander': 4.0}}
 
+
     import pandas as pd
 
     # create df with username as index
@@ -130,6 +131,41 @@ if __name__ == "__main__":
     df2 = df.T
     print df2
     # loop over all user pairs
+
+    import sys
+    #print top scores for given user
+    null_values = 0
+    user_name = raw_input("Enter username: ")
+    if (user_name not in df2.columns) :
+        print 'Cannot locate username.'
+        ans = raw_input("Would you like to sign up [Y/n] ")
+        if(ans=='Y') :
+            new_user=raw_input('Please choose a username. ')
+            df2[new_user] = np.nan
+            print df2
+            ans = raw_input("Would you like to rate movies [Y/n] ")
+            if(ans=='Y'):
+                print 'Rate on scale from 1.0-10.0.'
+                for i,movie in enumerate(df2.index):
+                    try:
+                        rating = raw_input(str(movie)+ ': ')
+                        df2[new_user][i]=rating
+                    except:
+                        pass
+                null_values = df2[new_user].isnull().sum()
+            else : sys.exit()
+        else: sys.exit()
+
+    if (null_values!=len(df2)):
+        n=3
+        print 'Username found. Retrieving top ' + str(n) + ' users with similar preferences for ' + str(user_name)
+        print 'Pearson: ' + str(top_matches(df2,user_name,n,similarity = sim_pearson))
+        print 'Euclidean: ' + str(top_matches(df2,user_name,n,similarity = sim_distance))
+    else:
+        print 'Please rate movies in order to receive preferences.'
+        sys.exit()
+
+    print df2
 
     #import collections
     #scores=collections.defaultdict(dict)
@@ -149,27 +185,18 @@ if __name__ == "__main__":
         # keep track of scores
         #scores[usr[0]][usr[1]]=scores[usr[1]][usr[0]]=corr
 
-        if (corr>0.6 and p<0.05):
-            print usr[0] + ' and ' + usr[1] + ' have similar movie preferences.'
+        #if (corr>0.6 and p<0.05):
+        #    print usr[0] + ' and ' + usr[1] + ' have similar movie preferences.'
 
         # uncomment for cross-check
-        corr_cc = sim_pearson(df_pair.index,df_pair[usr[0]],df_pair[usr[1]])
-        print 'Pearson correlation coefficient'
-        print '-------------------------------'
-        print ' User 1: ' + str(usr[0])
-        print ' User 2: ' + str(usr[1])
-        print 'Method 1: ' + str(corr)
-        print 'Method 2: ' + str(corr_cc)
-        print '-------------------------------'
-
-    #print top scores for given user
-    user_name = raw_input("Enter username: ")
-    if (user_name in df2.columns):
-        n=3
-        print 'Username found. Retrieving top ' + str(n) + ' users with similar preferences.'
-        print 'Pearson: ' + str(top_matches(df2,user_name,n,similarity = sim_pearson))
-        print 'Euclidean: ' + str(top_matches(df2,user_name,n,similarity = sim_distance))
-    else : print 'Cannot locate username. Please sign up.'
+        #corr_cc = sim_pearson(df_pair.index,df_pair[usr[0]],df_pair[usr[1]])
+        #print 'Pearson correlation coefficient'
+        #print '-------------------------------'
+        #print ' User 1: ' + str(usr[0])
+        #print ' User 2: ' + str(usr[1])
+        #print 'Method 1: ' + str(corr)
+        #print 'Method 2: ' + str(corr_cc)
+        #print '-------------------------------'
 
     # uncomment to plot user ratings
     #plt.show()
