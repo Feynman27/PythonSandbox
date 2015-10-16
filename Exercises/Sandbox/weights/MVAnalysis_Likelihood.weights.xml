@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<MethodSetup Method="Likelihood::Likelihood">
+  <GeneralInfo>
+    <Info name="TMVA Release" value="4.2.0 [262656]"/>
+    <Info name="ROOT Release" value="5.34/25 [336409]"/>
+    <Info name="Creator" value="tbales"/>
+    <Info name="Date" value="Sat Jun  6 10:51:42 2015"/>
+    <Info name="Host" value="Linux lcgapp-slc6-physical1.cern.ch 2.6.32-504.1.3.el6.x86_64 #1 SMP Wed Nov 12 06:58:35 CET 2014 x86_64 x86_64 x86_64 GNU/Linux"/>
+    <Info name="Dir" value="/direct/usatlas+u/tbales/PivotDataScienceExercise/Sandbox"/>
+    <Info name="Training events" value="400"/>
+    <Info name="TrainingTime" value="8.51798058e-03"/>
+    <Info name="AnalysisType" value="Classification"/>
+  </GeneralInfo>
+  <Options>
+    <Option name="V" modified="Yes">False</Option>
+    <Option name="VerbosityLevel" modified="No">Default</Option>
+    <Option name="VarTransform" modified="No">None</Option>
+    <Option name="H" modified="No">False</Option>
+    <Option name="CreateMVAPdfs" modified="No">False</Option>
+    <Option name="IgnoreNegWeightsInTraining" modified="No">False</Option>
+    <Option name="TransformOutput" modified="No">False</Option>
+  </Options>
+  <Variables NVar="2">
+    <Variable VarIndex="0" Expression="ConsExp_marital" Label="ConsExp_marital" Title="ConsExp_marital" Unit="" Internal="ConsExp_marital" Type="F" Min="1.00000000e+00" Max="5.00000000e+00"/>
+    <Variable VarIndex="1" Expression="ConsExp_foodhome" Label="ConsExp_foodhome" Title="ConsExp_foodhome" Unit="" Internal="ConsExp_foodhome" Type="F" Min="7.15000000e+02" Max="1.49520000e+04"/>
+  </Variables>
+  <Spectators NSpec="0"/>
+  <Classes NClass="2">
+    <Class Name="Signal" Index="0"/>
+    <Class Name="Background" Index="1"/>
+  </Classes>
+  <Transformations NTransformations="0"/>
+  <MVAPdfs/>
+  <Weights NVariables="2" NClasses="2">
+    <PDFDescriptor VarIndex="0" ClassIndex="0">
+      <PDF Name="Likelihood PDF Sig[0]" MinNSmooth="0" MaxNSmooth="0" InterpolMethod="2" KDE_type="1" KDE_iter="1" KDE_border="1" KDE_finefactor="1.0000000000000000e+00">
+        <Histogram Name="ConsExp_marital_sig_original" NBins="4" XMin="1.0000000000000000e+00" XMax="5.0000000000000000e+00" HasEquidistantBins="1">
+          1.27000000e+02 1.70000000e+01 3.30000000e+01 2.30000000e+01 
+        </Histogram>
+      </PDF>
+    </PDFDescriptor>
+    <PDFDescriptor VarIndex="0" ClassIndex="1">
+      <PDF Name="Likelihood PDF Bkg[0]" MinNSmooth="0" MaxNSmooth="0" InterpolMethod="2" KDE_type="1" KDE_iter="1" KDE_border="1" KDE_finefactor="1.0000000000000000e+00">
+        <Histogram Name="ConsExp_marital_bgd_original" NBins="4" XMin="1.0000000000000000e+00" XMax="5.0000000000000000e+00" HasEquidistantBins="1">
+          1.24000000e+02 1.60000000e+01 3.10000000e+01 2.90000000e+01 
+        </Histogram>
+      </PDF>
+    </PDFDescriptor>
+    <PDFDescriptor VarIndex="1" ClassIndex="0">
+      <PDF Name="Likelihood PDF Sig[1]" MinNSmooth="0" MaxNSmooth="0" InterpolMethod="2" KDE_type="1" KDE_iter="1" KDE_border="1" KDE_finefactor="1.0000000000000000e+00">
+        <Histogram Name="ConsExp_foodhome_sig_original" NBins="4" XMin="7.1500000000000000e+02" XMax="1.4952000000000000e+04" HasEquidistantBins="1">
+          1.22000000e+02 6.90000000e+01 7.00000000e+00 2.00000000e+00 
+        </Histogram>
+      </PDF>
+    </PDFDescriptor>
+    <PDFDescriptor VarIndex="1" ClassIndex="1">
+      <PDF Name="Likelihood PDF Bkg[1]" MinNSmooth="0" MaxNSmooth="0" InterpolMethod="2" KDE_type="1" KDE_iter="1" KDE_border="1" KDE_finefactor="1.0000000000000000e+00">
+        <Histogram Name="ConsExp_foodhome_bgd_original" NBins="4" XMin="7.1500000000000000e+02" XMax="1.4952000000000000e+04" HasEquidistantBins="1">
+          1.26000000e+02 6.60000000e+01 5.00000000e+00 3.00000000e+00 
+        </Histogram>
+      </PDF>
+    </PDFDescriptor>
+  </Weights>
+</MethodSetup>
