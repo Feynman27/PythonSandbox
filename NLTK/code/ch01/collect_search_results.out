@@ -1,0 +1,315 @@
+Length of statuses  100
+Length of statuses  100
+Length of statuses  100
+Length of statuses  100
+Length of statuses  100
+{
+ "contributors": null, 
+ "truncated": false, 
+ "text": "RT @ESPNTennis: World No.1 #Serena keeps her calendar-year Grand Slam hopes alive with 6-2 4-6 7-5 3R win over #Watson. #Wimbledon http://t\u2026", 
+ "is_quote_status": false, 
+ "in_reply_to_status_id": null, 
+ "id": 617045861441220608, 
+ "favorite_count": 0, 
+ "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+ "retweeted": false, 
+ "coordinates": null, 
+ "entities": {
+  "symbols": [], 
+  "user_mentions": [
+   {
+    "id": 25324954, 
+    "indices": [
+     3, 
+     14
+    ], 
+    "id_str": "25324954", 
+    "screen_name": "ESPNTennis", 
+    "name": "ESPNTennis"
+   }
+  ], 
+  "hashtags": [
+   {
+    "indices": [
+     27, 
+     34
+    ], 
+    "text": "Serena"
+   }, 
+   {
+    "indices": [
+     111, 
+     118
+    ], 
+    "text": "Watson"
+   }, 
+   {
+    "indices": [
+     120, 
+     130
+    ], 
+    "text": "Wimbledon"
+   }
+  ], 
+  "urls": [], 
+  "media": [
+   {
+    "source_user_id": 25324954, 
+    "source_status_id_str": "617037774504509440", 
+    "expanded_url": "http://twitter.com/ESPNTennis/status/617037774504509440/photo/1", 
+    "display_url": "pic.twitter.com/0C1vnlwR9f", 
+    "url": "http://t.co/0C1vnlwR9f", 
+    "media_url_https": "https://pbs.twimg.com/media/CJAolfyWoAAQZa1.jpg", 
+    "source_user_id_str": "25324954", 
+    "source_status_id": 617037774504509440, 
+    "id_str": "617037773602725888", 
+    "sizes": {
+     "small": {
+      "h": 191, 
+      "resize": "fit", 
+      "w": 340
+     }, 
+     "large": {
+      "h": 576, 
+      "resize": "fit", 
+      "w": 1024
+     }, 
+     "medium": {
+      "h": 337, 
+      "resize": "fit", 
+      "w": 600
+     }, 
+     "thumb": {
+      "h": 150, 
+      "resize": "crop", 
+      "w": 150
+     }
+    }, 
+    "indices": [
+     139, 
+     140
+    ], 
+    "type": "photo", 
+    "id": 617037773602725888, 
+    "media_url": "http://pbs.twimg.com/media/CJAolfyWoAAQZa1.jpg"
+   }
+  ]
+ }, 
+ "in_reply_to_screen_name": null, 
+ "in_reply_to_user_id": null, 
+ "retweet_count": 174, 
+ "id_str": "617045861441220608", 
+ "favorited": false, 
+ "retweeted_status": {
+  "contributors": null, 
+  "truncated": false, 
+  "text": "World No.1 #Serena keeps her calendar-year Grand Slam hopes alive with 6-2 4-6 7-5 3R win over #Watson. #Wimbledon http://t.co/0C1vnlwR9f", 
+  "is_quote_status": false, 
+  "in_reply_to_status_id": null, 
+  "id": 617037774504509440, 
+  "favorite_count": 175, 
+  "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>", 
+  "retweeted": false, 
+  "coordinates": null, 
+  "entities": {
+   "symbols": [], 
+   "user_mentions": [], 
+   "hashtags": [
+    {
+     "indices": [
+      11, 
+      18
+     ], 
+     "text": "Serena"
+    }, 
+    {
+     "indices": [
+      95, 
+      102
+     ], 
+     "text": "Watson"
+    }, 
+    {
+     "indices": [
+      104, 
+      114
+     ], 
+     "text": "Wimbledon"
+    }
+   ], 
+   "urls": [], 
+   "media": [
+    {
+     "expanded_url": "http://twitter.com/ESPNTennis/status/617037774504509440/photo/1", 
+     "display_url": "pic.twitter.com/0C1vnlwR9f", 
+     "url": "http://t.co/0C1vnlwR9f", 
+     "media_url_https": "https://pbs.twimg.com/media/CJAolfyWoAAQZa1.jpg", 
+     "id_str": "617037773602725888", 
+     "sizes": {
+      "small": {
+       "h": 191, 
+       "resize": "fit", 
+       "w": 340
+      }, 
+      "large": {
+       "h": 576, 
+       "resize": "fit", 
+       "w": 1024
+      }, 
+      "medium": {
+       "h": 337, 
+       "resize": "fit", 
+       "w": 600
+      }, 
+      "thumb": {
+       "h": 150, 
+       "resize": "crop", 
+       "w": 150
+      }
+     }, 
+     "indices": [
+      115, 
+      137
+     ], 
+     "type": "photo", 
+     "id": 617037773602725888, 
+     "media_url": "http://pbs.twimg.com/media/CJAolfyWoAAQZa1.jpg"
+    }
+   ]
+  }, 
+  "in_reply_to_screen_name": null, 
+  "in_reply_to_user_id": null, 
+  "retweet_count": 174, 
+  "id_str": "617037774504509440", 
+  "favorited": false, 
+  "user": {
+   "follow_request_sent": false, 
+   "has_extended_profile": false, 
+   "profile_use_background_image": true, 
+   "default_profile_image": false, 
+   "id": 25324954, 
+   "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/13605242/twitter_bg.jpg", 
+   "verified": true, 
+   "profile_text_color": "333333", 
+   "profile_image_url_https": "https://pbs.twimg.com/profile_images/3111830884/2689c24fb66bb36c31afe59e0502e159_normal.jpeg", 
+   "profile_sidebar_fill_color": "DDFFCC", 
+   "entities": {
+    "url": {
+     "urls": [
+      {
+       "url": "http://t.co/grlfx7g2cc", 
+       "indices": [
+        0, 
+        22
+       ], 
+       "expanded_url": "http://espn.go.com/tennis/", 
+       "display_url": "espn.go.com/tennis/"
+      }
+     ]
+    }, 
+    "description": {
+     "urls": []
+    }
+   }, 
+   "followers_count": 250121, 
+   "profile_sidebar_border_color": "BDDCAD", 
+   "id_str": "25324954", 
+   "profile_background_color": "9AE4E8", 
+   "listed_count": 2846, 
+   "is_translation_enabled": false, 
+   "utc_offset": -14400, 
+   "statuses_count": 27783, 
+   "description": "LEGAL NOTICE: If you send us a tweet, you consent to letting ESPN use and showcase it in any media, possibly on television.", 
+   "friends_count": 717, 
+   "location": "", 
+   "profile_link_color": "0084B4", 
+   "profile_image_url": "http://pbs.twimg.com/profile_images/3111830884/2689c24fb66bb36c31afe59e0502e159_normal.jpeg", 
+   "following": false, 
+   "geo_enabled": true, 
+   "profile_banner_url": "https://pbs.twimg.com/profile_banners/25324954/1424722332", 
+   "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/13605242/twitter_bg.jpg", 
+   "screen_name": "ESPNTennis", 
+   "lang": "en", 
+   "profile_background_tile": false, 
+   "favourites_count": 1615, 
+   "name": "ESPNTennis", 
+   "notifications": false, 
+   "url": "http://t.co/grlfx7g2cc", 
+   "created_at": "Thu Mar 19 16:01:19 +0000 2009", 
+   "contributors_enabled": false, 
+   "time_zone": "Eastern Time (US & Canada)", 
+   "protected": false, 
+   "default_profile": false, 
+   "is_translator": false
+  }, 
+  "geo": null, 
+  "in_reply_to_user_id_str": null, 
+  "possibly_sensitive": false, 
+  "lang": "en", 
+  "created_at": "Fri Jul 03 18:30:44 +0000 2015", 
+  "in_reply_to_status_id_str": null, 
+  "place": null, 
+  "metadata": {
+   "iso_language_code": "en", 
+   "result_type": "recent"
+  }
+ }, 
+ "user": {
+  "follow_request_sent": false, 
+  "has_extended_profile": false, 
+  "profile_use_background_image": true, 
+  "default_profile_image": false, 
+  "id": 451145059, 
+  "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+  "verified": false, 
+  "profile_text_color": "333333", 
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/564612694188101632/bnX_Gamr_normal.jpeg", 
+  "profile_sidebar_fill_color": "DDEEF6", 
+  "entities": {
+   "description": {
+    "urls": []
+   }
+  }, 
+  "followers_count": 283, 
+  "profile_sidebar_border_color": "C0DEED", 
+  "id_str": "451145059", 
+  "profile_background_color": "C0DEED", 
+  "listed_count": 1, 
+  "is_translation_enabled": false, 
+  "utc_offset": -21600, 
+  "statuses_count": 10121, 
+  "description": "Johns Hopkins", 
+  "friends_count": 259, 
+  "location": "West Coast | East Coast ", 
+  "profile_link_color": "0084B4", 
+  "profile_image_url": "http://pbs.twimg.com/profile_images/564612694188101632/bnX_Gamr_normal.jpeg", 
+  "following": false, 
+  "geo_enabled": true, 
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/451145059/1423473916", 
+  "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+  "screen_name": "RKardjian", 
+  "lang": "en", 
+  "profile_background_tile": false, 
+  "favourites_count": 5302, 
+  "name": "Raffi", 
+  "notifications": false, 
+  "url": null, 
+  "created_at": "Sat Dec 31 03:03:38 +0000 2011", 
+  "contributors_enabled": false, 
+  "time_zone": "Mountain Time (US & Canada)", 
+  "protected": false, 
+  "default_profile": true, 
+  "is_translator": false
+ }, 
+ "geo": null, 
+ "in_reply_to_user_id_str": null, 
+ "possibly_sensitive": false, 
+ "lang": "en", 
+ "created_at": "Fri Jul 03 19:02:52 +0000 2015", 
+ "in_reply_to_status_id_str": null, 
+ "place": null, 
+ "metadata": {
+  "iso_language_code": "en", 
+  "result_type": "recent"
+ }
+}
