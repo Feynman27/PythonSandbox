@@ -1,0 +1,1 @@
+hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-2.7.1.jar -input /tmp/moby_dick/mobydick_summary.txt -output /tmp/moby_output -file ./word_mapper.py -mapper word_mapper.py -file word_reducer.py -reducer word_reducer.py
