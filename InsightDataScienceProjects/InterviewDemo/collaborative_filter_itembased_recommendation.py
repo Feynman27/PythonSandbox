@@ -1,9 +1,13 @@
-#!/usr/bin/python
+#! /usr/bin/python
 
-'''
-Build item-based collaborative filter by finding
-items that are similar to ones user has bought
-'''
+print\
+"""
+ITEM-BASED COLLABORATIVE FILTER DEMO
+
+Recommendation engine for movies taken from
+MovieLens (http://grouplens.org/datasets/movielens/). Similarity scores
+are calculated using the correlation between ratings vectors for pairs of movies.
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -155,7 +159,7 @@ def calculate_similar_items(df,n=10):
     ## Create dictionary that stores similarity scores
     ## between movie pairs
     result={}
-    print 'Computing similarity scores. This may take a minute...'
+    print '\nComputing similarity scores. This may take a minute...\n'
     ## iterate over each movie item
     for i,item in enumerate(df['movieId'].unique()):
         ## limit number of movies
@@ -240,7 +244,7 @@ def get_recommendations(df,itemScores,usr):
         plt.yticks(fontsize='x-small')
         fig_heatmap.tight_layout()
 
-    except TypeError:
+    except:
         print 'WARNING: Data sparsity. Unable to create heatmap of similarity scores.'
         pass
 
@@ -277,7 +281,7 @@ if __name__ == "__main__":
     print df_newmov.head()
     #print df_newmov.tail()
 
-    user_name = raw_input("Enter user id: ")
+    user_name = raw_input("Enter user id (quit to exit): ")
     if(user_name == 'quit'): sys.exit()
     while (user_name not in str(df_newmov['userId'].unique())) :
         print 'Cannot locate username. Please retry.'
@@ -335,7 +339,7 @@ if __name__ == "__main__":
             ax.grid(True)
             plt.axhline(y=5.0,color='r',linestyle='dotted',lw=5)
             fig2.tight_layout()
-        except TypeError:
+        except:
             print 'WARNING: Data sparsity. Unable to determine predicted ratings.'
             pass
 
